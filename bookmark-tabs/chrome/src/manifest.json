@@ -1,16 +1,19 @@
 {
-   "browser_action": {
-      "default_icon": "16.png",
-      "default_popup": "popup.html"
-   },
-   "description": "Get all opened tabs URLs, and copy them to the clipboard",
-   "icons": {
-      "16": "16.png"
-   },
-   "name": "Rivka Get opened tabs URLs",
-   "permissions": [ "tabs","bookmarks" ],
-   "version": "0.2",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["get_opened_tabs_urls.js"],
+        "persistent": false
+    },
+"name": "Get opened tabs URLs",
+    "permissions": [
+        "tabs",
+"bookmarks",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "browser_action": {
+        "default_title": "Dual View Split Screen", 
+        "default_icon": "16.png"
+    } ,
+ "version": "0.2"  
 }
-
-
