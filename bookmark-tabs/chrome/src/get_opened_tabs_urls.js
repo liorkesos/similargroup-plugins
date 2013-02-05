@@ -16,14 +16,13 @@ function similarDate() {
 }
 function getOpenTabs( tabs ) {  
    var currDate = similarDate(); 
-   var currentmyFolderID;
+   var currentmyfolderID;
   chrome.bookmarks.create( {
-
     'title': currDate},
     function ( newFolder ) {
      currentmyfolderID = newFolder.id ;
     });
-  //alert(currentmyfolderID);
+  alert('Your open tabs were saved.');
   for ( var i = 0; i < tabs.length; i++ ) {
         var tabUrl   = tabs[i].url ;
         var tabTitle = tabs[i].title;
