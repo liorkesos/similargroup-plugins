@@ -12,7 +12,7 @@
         "https://*/*"
     ],
     "browser_action": {
-        "default_title": "Dual View Split Screen", 
+        "default_title": "Get opened tabs URLs", 
         "default_icon": "16.png"
     } ,
  "version": "0.2"  
